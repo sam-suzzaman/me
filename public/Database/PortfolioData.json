@@ -27,7 +27,7 @@
                 "id": 21,
                 "category": "MERN",
                 "title": "Result Management System (RMS)",
-                "thumbnail": "./src/assets/Portfolio/Thumbnail/rms.png",
+                "thumbnail": "assets/Portfolio/Thumbnail/rms.png",
                 "description": "This is a Job Portal Web Application which is MERN Stack based application. This application has all the functions of managing the user of the application including posting a job, applying for that job and accepting or rejecting the application. Now we will see the function of the complete application part by part.",
                 "links": [
                     {
@@ -96,7 +96,7 @@
                 "id": 22,
                 "category": "HTML/CSS",
                 "title": "Job Portal Website (Hunter)",
-                "thumbnail": "./src/assets/Portfolio/Thumbnail/hunter.png",
+                "thumbnail": "assets/Portfolio/Thumbnail/hunter.png",
                 "description": "This is a Job Portal Web Application which is MERN Stack based application. This application has all the functions of managing the user of the application including posting a job, applying for that job and accepting or rejecting the application. Now we will see the function of the complete application part by part.",
                 "links": [
                     {
@@ -120,7 +120,7 @@
                 "id": 23,
                 "category": "Next JS",
                 "title": "News Portal Website (Xpress)",
-                "thumbnail": "./src/assets/Portfolio/Thumbnail/hunter.png",
+                "thumbnail": "assets/Portfolio/Thumbnail/hunter.png",
                 "description": "This is a Job Portal Web Application which is MERN Stack based application. This application has all the functions of managing the user of the application including posting a job, applying for that job and accepting or rejecting the application. Now we will see the function of the complete application part by part.",
                 "links": [
                     {
@@ -144,7 +144,7 @@
                 "id": 24,
                 "category": "HTML/CSS",
                 "title": "Job Portal Website (Hunter)",
-                "thumbnail": "./src/assets/Portfolio/Thumbnail/hunter.png",
+                "thumbnail": "assets/Portfolio/Thumbnail/hunter.png",
                 "description": "This is a Job Portal Web Application which is MERN Stack based application. This application has all the functions of managing the user of the application including posting a job, applying for that job and accepting or rejecting the application. Now we will see the function of the complete application part by part.",
                 "links": [
                     {
