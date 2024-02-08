@@ -1290,7 +1290,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 rgba(255, 255, 255, 0.9),
                 rgba(255, 255, 255, 0.85)
             ),
-            url("/src/assets/bg.jpg");
+            url("assets/bg.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
