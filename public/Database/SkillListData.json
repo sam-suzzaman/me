@@ -1,67 +1,67 @@
 [
     {
         "id": 1,
-        "pic": "./src/assets/Skill/html.png",
+        "pic": "assets/Skill/html.png",
         "name": "html",
         "status": "flexible"
     },
     {
         "id": 2,
-        "pic": "./src/assets/Skill/css.png",
+        "pic": "assets/Skill/css.png",
         "name": "css",
         "status": "flexible"
     },
     {
         "id": 3,
-        "pic": "./src/assets/Skill/js.png",
+        "pic": "assets/Skill/js.png",
         "name": "javaScript",
         "status": "flexible"
     },
     {
         "id": 4,
-        "pic": "./src/assets/Skill/bs.png",
+        "pic": "assets/Skill/bs.png",
         "name": "bootstrap",
         "status": "flexible"
     },
     {
         "id": 5,
-        "pic": "./src/assets/Skill/tailwind.png",
+        "pic": "assets/Skill/tailwind.png",
         "name": "tailwind",
         "status": "flexible"
     },
     {
         "id": 6,
-        "pic": "./src/assets/Skill/react.png",
+        "pic": "assets/Skill/react.png",
         "name": "reactjs",
         "status": "flexible"
     },
     {
         "id": 7,
-        "pic": "./src/assets/Skill/node.png",
+        "pic": "assets/Skill/node.png",
         "name": "nodejs",
         "status": "begineer"
     },
     {
         "id": 8,
-        "pic": "./src/assets/Skill/express.png",
+        "pic": "assets/Skill/express.png",
         "name": "express",
         "status": "flexible"
     },
     {
         "id": 9,
-        "pic": "./src/assets/Skill/md.png",
+        "pic": "assets/Skill/md.png",
         "name": "Mongodb",
         "status": "begineer"
     },
     {
         "id": 10,
-        "pic": "./src/assets/Skill/git.png",
+        "pic": "assets/Skill/git.png",
         "name": "git",
         "status": "flexible"
     },
     {
         "id": 11,
-        "pic": "./src/assets/Skill/next.png",
+        "pic": "assets/Skill/next.png",
         "name": "nextJs",
         "status": "begineer"
     }
