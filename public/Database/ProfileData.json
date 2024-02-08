@@ -1,0 +1,34 @@
+{
+    "profile_pic": "./src/assets/profile.png",
+    "username": "samsuzzaman",
+    "short_desc": "Frontend Web Developer, Specialize In Designing And Developing Intuitive And Visually Appealing User Interfaces And Experiences For Websites.",
+    "social_links": [
+        {
+            "id": 1,
+            "name": "facebook",
+            "url": ""
+        },
+        {
+            "id": 2,
+            "name": "github",
+            "url": ""
+        },
+        {
+            "id": 3,
+            "name": "twitter",
+            "url": ""
+        },
+        {
+            "id": 4,
+            "name": "linkedin",
+            "url": ""
+        }
+    ],
+    "resume": "",
+    "location": "Kushtia,Dhaka, Bangladesh",
+    "Educational_Institutation": "Jaitya Kabi Kazi Nazrul Islam University",
+    "Degree_Name": "B.sc in Electrical and Electronic Engineering",
+    "Educational_Status": "Completed",
+    "Email": "00samsuzzaman@gmail.com",
+    "contact": "01708642294"
+}
