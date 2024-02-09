@@ -24,7 +24,7 @@ const Wrapper = styled.div`
     .tab_container {
         display: flex;
         flex-wrap: wrap;
-        gap: calc(0.9rem + 0.6vw);
+        gap: calc(1.5rem + 0.6vw);
         justify-content: center;
         align-items: center;
     }

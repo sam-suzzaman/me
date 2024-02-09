@@ -6,6 +6,26 @@ import Sidebar from "./Sidebar";
 import { Link } from "react-scroll";
 import Button from "./Button";
 
+import { IoHomeOutline } from "react-icons/io5";
+import { CiCircleInfo } from "react-icons/ci";
+import { MdOutlineMedicalServices } from "react-icons/md";
+import { FaBriefcase } from "react-icons/fa";
+import { BsEnvelope } from "react-icons/bs";
+import { PiStepsDuotone } from "react-icons/pi";
+
+const navData = [
+    { id: 1, to: "home", icon: <IoHomeOutline className="menu-icon" /> },
+    { id: 2, to: "about", icon: <CiCircleInfo className="menu-icon" /> },
+    { id: 3, to: "skill", icon: <PiStepsDuotone className="menu-icon" /> },
+    {
+        id: 4,
+        to: "service",
+        icon: <MdOutlineMedicalServices className="menu-icon" />,
+    },
+    { id: 5, to: "portfolio", icon: <FaBriefcase className="menu-icon" /> },
+    { id: 6, to: "contact", icon: <BsEnvelope className="menu-icon" /> },
+];
+
 const Navbar = () => {
     const [isShowSidebar, setIsShowSidebar] = useState(false);
     const sidebar_ref = useRef();
@@ -48,78 +68,22 @@ const Navbar = () => {
                 </div>
                 <div className="center">
                     <ul className="menu">
-                        <li>
-                            <Link
-                                activeClass="active"
-                                to="home"
-                                spy={true}
-                                smooth={true}
-                                offset={-60}
-                                duration={500}
-                            >
-                                home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                activeClass="active"
-                                to="about"
-                                spy={true}
-                                smooth={true}
-                                offset={-60}
-                                duration={500}
-                            >
-                                about
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                activeClass="active"
-                                to="skill"
-                                spy={true}
-                                smooth={true}
-                                offset={-60}
-                                duration={500}
-                            >
-                                skill
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                activeClass="active"
-                                to="service"
-                                spy={true}
-                                smooth={true}
-                                offset={-60}
-                                duration={500}
-                            >
-                                service
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                activeClass="active"
-                                to="portfolio"
-                                spy={true}
-                                smooth={true}
-                                offset={-60}
-                                duration={500}
-                            >
-                                portfolio
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                activeClass="active"
-                                to="contact"
-                                spy={true}
-                                smooth={true}
-                                offset={-60}
-                                duration={500}
-                            >
-                                contact
-                            </Link>
-                        </li>
+                        {navData?.map((data) => {
+                            return (
+                                <li key={data.id}>
+                                    <Link
+                                        activeClass="active"
+                                        to={data.to}
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-60}
+                                        duration={500}
+                                    >
+                                        {data.to}
+                                    </Link>
+                                </li>
+                            );
+                        })}
                     </ul>
                 </div>
                 <div className="right">
@@ -132,7 +96,7 @@ const Navbar = () => {
             <div
                 className={`sidebar-container ${isShowSidebar ? "isShow" : ""}`}
             >
-                <Sidebar />
+                <Sidebar navData={navData} />
             </div>
         </Wrapper>
     );
@@ -165,7 +129,7 @@ const Wrapper = styled.nav`
         left: 0;
         height: 100vh;
         width: 80vw;
-        max-width: 220px;
+        max-width: 250px;
         background-color: var(--primary-clr);
         transition: all 0.3s linear;
         transform: translateX(-100%);
@@ -194,6 +158,7 @@ const Wrapper = styled.nav`
         align-items: center;
     }
     .sidebar-container .sidebar-menu {
+        width: 100%;
         padding: 0 20px;
         /* margin-top: 20px; */
         list-style: none;

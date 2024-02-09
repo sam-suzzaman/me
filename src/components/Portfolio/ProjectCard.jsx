@@ -18,20 +18,16 @@ const ProjectCard = ({ project }) => {
             <div class="portfolio_card">
                 <div class="card_content">
                     <img src={project.thumbnail} class="one" alt="BgImage" />
-                    <div className="temp">
-                        <div class="caption">
-                            <h2>{project.title}</h2>
-                            <p>
-                                {project.description.length > 100
-                                    ? project.description.slice(0, 100) + "..."
-                                    : project.description}
-                            </p>
-                            <div
-                                class="project_links"
-                                onClick={OpenModalLayerOne}
-                            >
-                                see detail
-                            </div>
+
+                    <div class="caption">
+                        <h2>{project.title}</h2>
+                        <p>
+                            {project.description.length > 90
+                                ? project.description.slice(0, 90) + "..."
+                                : project.description}
+                        </p>
+                        <div class="project_links" onClick={OpenModalLayerOne}>
+                            see detail
                         </div>
                     </div>
                 </div>
@@ -60,7 +56,9 @@ const Wrapper = styled.div`
         overflow: hidden;
         position: relative;
         transition: all 0.3s;
-        border: 3px solid var(--light-border);
+        border-left: 3px solid var(--light-border);
+        border-top: 3px solid var(--light-border);
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
         padding: 8px;
     }
     .portfolio_card .card_content img {
@@ -75,8 +73,8 @@ const Wrapper = styled.div`
         left: 0px;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.855);
-        transition: all 0.4s;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: all 0.6s;
         transition-delay: 0.1s;
         transform: scale(0);
         opacity: 0;
@@ -88,10 +86,8 @@ const Wrapper = styled.div`
     }
     .portfolio_card .card_content .caption {
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -99,64 +95,51 @@ const Wrapper = styled.div`
         color: var(--white-clr);
         /* trick */
         opacity: 0;
-        transform: translateY(-20px);
-        transition: all 0.25s;
-        padding: 20px 10px;
+        transform: translateY(100%);
+        transition: all 0.4s;
+        padding: 10px 10px;
+        background-color: #fff;
     }
     .portfolio_card .card_content:hover .caption {
         opacity: 1;
         transform: translateY(0);
-        transition-delay: 0.3s;
+        transition-delay: 0.2s;
     }
 
     .portfolio_card .card_content .caption h2 {
         text-transform: capitalize;
         font-weight: medium;
         margin: 0;
-        transition: all 0.3s;
-        transform: translate(200px, -200px);
-        font-size: calc(1.1rem + 0.24vw);
+        font-size: calc(1rem + 0.15vw);
         color: var(--secondary-clr);
         text-align: center;
         line-height: 28px;
     }
-    .portfolio_card .card_content:hover .caption h2 {
-        transform: translate(0, 0);
-        transition-delay: 0.3s;
-    }
     .portfolio_card .card_content .caption p {
-        font-size: calc(0.76rem + 0.2vw);
-        font-weight: 400;
-        margin-top: 18px;
-        text-align: center;
-        transform: translate(-200px, 200px);
-        transition: all 0.3s;
-        padding: 0 10px;
+        font-size: calc(0.7rem + 0.1vw);
+        font-weight: medium;
+        margin-top: 5px;
+        text-align: justify;
+        padding: 0 calc(8px + 0.5vw);
+        color: #000;
         line-height: 25px;
-    }
-    .portfolio_card .card_content:hover .caption p {
-        transform: translate(0, 0);
-        transition-delay: 0.5s;
-        color: var(--neutral-clr);
         font-weight: lighter;
-        font-family: var(--font-poppins);
-        font-size: 14px;
     }
     .portfolio_card .card_content .project_links {
         text-transform: capitalize;
         font-weight: medium;
         font-size: 13px;
         letter-spacing: 1px;
-        background-color: var(--accent-clr);
-        border-radius: 6px;
-        padding: 7px 20px;
+        background-color: var(--secondary-clr);
+        border-radius: 4px;
+        padding: 5px 16px;
         color: #fff;
         transition: all 0.3s linear;
-        margin-top: 22px;
+        margin-top: 6px;
         cursor: pointer;
     }
     .portfolio_card .card_content .project_links:hover {
-        background-color: var(--secondary-clr);
+        background-color: var(--primary-clr);
         color: var(--white-clr);
     }
 `;

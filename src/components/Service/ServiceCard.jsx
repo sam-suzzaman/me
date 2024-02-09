@@ -19,6 +19,7 @@ const Wrapper = styled.div`
     position: relative;
     transition: all 0.4s linear;
     height: 100%;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
 
     &:hover {
         background-color: var(--primary-clr);

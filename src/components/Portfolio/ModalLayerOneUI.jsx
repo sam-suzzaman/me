@@ -148,6 +148,7 @@ const Wrapper = styled.div`
         border: 1px solid #00000071;
         border-radius: 6px;
         position: relative;
+        overflow: hidden;
     }
 
     .modal_content .left img {

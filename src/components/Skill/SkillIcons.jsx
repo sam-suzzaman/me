@@ -51,7 +51,7 @@ const Wrapper = styled.div`
     .content .title {
         color: #fff;
         font-weight: normal;
-        font-size: 18px;
+        font-size: calc(12px + 0.2vw);
         letter-spacing: 0.5px;
         text-transform: uppercase;
     }

@@ -26,8 +26,8 @@ const Wrapper = styled.div`
         bottom: -5px;
         left: 50%;
         transform: translateX(-50%);
-        width: calc(20px + 1.5vw);
-        height: 3px;
+        width: calc(24px + 1.5vw);
+        height: 4px;
         background-color: var(--accent-clr);
         border-radius: 20px;
     }

@@ -81,7 +81,7 @@ const Wrapper = styled.div`
             border-right: none;
         }
     }
-    @media screen and (max-width: 520px) {
+    @media screen and (max-width: 290px) {
         .tabs {
             display: grid;
             grid-template-columns: 1fr;

@@ -6,6 +6,7 @@ import {
     ModalLayerOne,
     LayerTwoVideoModal,
 } from "./components/shared/Modals/Modals";
+import Footer from "./components/shared/Footer";
 
 // Here you pass your modals to Reoverlay
 Reoverlay.config([
@@ -24,6 +25,7 @@ function App() {
         <>
             <Navbar />
             <LandingPage />
+            <Footer />
             <ModalContainer />
         </>
     );

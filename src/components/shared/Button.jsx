@@ -35,9 +35,9 @@ const BUTTON = styled.button`
     border: 2px solid var(--secondary-clr);
     transition: color 0.5s;
     z-index: 1;
-    font-size: calc(14px + 0.2vw);
+    font-size: calc(13px + 0.2vw);
     border-radius: 4px;
-    padding: calc(5px + 0.1vw) calc(14px + 0.9vw);
+    padding: calc(3px + 0.1vw) calc(14px + 0.9vw);
     cursor: pointer;
     display: inline-flex;
     justify-content: center;
@@ -73,7 +73,7 @@ const BUTTON = styled.button`
     .btn_icon {
         display: flex;
         align-items: center;
-        font-size: calc(1rem + 0.2vw);
+        font-size: calc(1.3rem + 0.2vw);
         margin-right: calc(4px + 0.3vw);
     }
 `;
@@ -85,12 +85,12 @@ const BUTTON2 = styled.button`
     text-transform: capitalize;
     position: relative;
     overflow: hidden;
-    border: 2px solid var(--neutral-clr);
+    border: 2px solid var(--accent-clr);
     transition: color 0.5s;
     z-index: 1;
     font-size: calc(14px + 0.2vw);
     border-radius: 4px;
-    padding: calc(5px + 0.1vw) calc(14px + 0.9vw);
+    padding: calc(5.5px + 0.1vw) calc(14px + 0.9vw);
     cursor: pointer;
     display: inline-flex;
     justify-content: center;
