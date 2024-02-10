@@ -13,51 +13,51 @@ import { CiLinkedin } from "react-icons/ci";
 const ContactInfo = () => {
     return (
         <Wrapper>
-            <div class="left">
+            <div className="left">
                 <h4>let's connect</h4>
-                <p class="contact_info">
+                <p className="contact_info">
                     Whether it's creating a new website or revamping an existing
                     one, I am here to help. Contact me anytime at 24/7, and
                     let's work together to bring your vision to life!"
                 </p>
-                <div class="address_sec">
+                <div className="address_sec">
                     {/* location row */}
-                    <div class="location row">
-                        <img src={nine} alt="location_icon" class="" />
-                        <p class="">
-                            <span class="">
+                    <div className="location row">
+                        <img src={nine} alt="location_icon" className="" />
+                        <p className="">
+                            <span className="">
                                 Jatiya Kabi Kazi Nazrul Islam University
                             </span>
                             <br />
-                            <span class="">Trishal,Mymensingh</span>
+                            <span className="">Trishal,Mymensingh</span>
                             <br />
-                            <span class="">Bangladesh</span>
+                            <span className="">Bangladesh</span>
                         </p>
                     </div>
                     {/* Mobile row */}
-                    <div class="mobile row">
-                        <img src={sixteenth} alt="mobile_icon" class="" />
-                        <p class="">
-                            <span class="">+880-01708642294</span>
+                    <div className="mobile row">
+                        <img src={sixteenth} alt="mobile_icon" className="" />
+                        <p className="">
+                            <span className="">+880-01708642294</span>
                         </p>
                     </div>
                     {/* Whatsapp row */}
-                    <div class="whatsapp row">
-                        <img src={fourteenth} alt="Whatsapp" class="" />
-                        <p class="">
-                            <span class="">01708642294</span>
+                    <div className="whatsapp row">
+                        <img src={fourteenth} alt="Whatsapp" className="" />
+                        <p className="">
+                            <span className="">01708642294</span>
                         </p>
                     </div>
                     {/* Email row */}
-                    <div class="email row">
-                        <img src={thirteentn} alt="Whatsapp" class="" />
-                        <p class="">
-                            <span class="">00samsuzzaman@gmail.com</span>
+                    <div className="email row">
+                        <img src={thirteentn} alt="Whatsapp" className="" />
+                        <p className="">
+                            <span className="">00samsuzzaman@gmail.com</span>
                         </p>
                     </div>
                 </div>
                 {/* Social Links */}
-                <ul class="contact_social">
+                <ul className="contact_social">
                     <li>
                         <a href="">
                             <FaFacebookF />

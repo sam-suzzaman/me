@@ -9,7 +9,7 @@ const Contact = () => {
     return (
         <Wrapper>
             <SectionTitle title="get in touch" subtitle="contact" />
-            <div class="contact_container">
+            <div className="contact_container">
                 <ContactInfo />
                 <ContactForm />
             </div>

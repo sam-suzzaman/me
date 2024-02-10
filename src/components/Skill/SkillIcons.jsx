@@ -1,17 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-const SkillIcon = ({ skill }) => {
+const fadeInVariants = {
+    initial: {
+        opacity: 0,
+        y: 50,
+    },
+    animate: {
+        opacity: 1,
+        y: 0,
+    },
+};
+
+const SkillIcon = ({ skill, index }) => {
     return (
-        <Wrapper>
-            <div className="icon">
-                <img src={skill.pic} alt="icon" />
-            </div>
-            <div className="content">
-                <h6 className="title">{skill.name}</h6>
-                <p className="status">{skill.status}</p>
-            </div>
-        </Wrapper>
+        <motion.div
+            initial={fadeInVariants.initial}
+            whileInView={fadeInVariants.animate}
+            transition={{ duration: 0.5, delay: 0.06 * index }}
+        >
+            <Wrapper>
+                <div>
+                    <div className="icon">
+                        <img src={skill.pic} alt="icon" />
+                    </div>
+                    <div className="content">
+                        <h6 className="title">{skill.name}</h6>
+                        <p className="status">{skill.status}</p>
+                    </div>
+                </div>
+            </Wrapper>
+        </motion.div>
     );
 };
 const Wrapper = styled.div`

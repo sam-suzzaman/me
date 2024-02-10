@@ -18,10 +18,10 @@ const ModalLayerOneUI = ({ project }) => {
     };
     return (
         <Wrapper>
-            <div class="modal_content">
+            <div className="modal_content">
                 <h2>{project.title}</h2>
-                <div class="content_row">
-                    <div class="left">
+                <div className="content_row">
+                    <div className="left">
                         <img src={project.thumbnail} alt="project thumbnail" />
                         <div
                             className="overlay"
@@ -30,15 +30,15 @@ const ModalLayerOneUI = ({ project }) => {
                             <FaCirclePlay className="icon" />
                         </div>
                     </div>
-                    <div class="right">
-                        <div class="description">
+                    <div className="right">
+                        <div className="description">
                             <h4>description:</h4>
                             <p>{project.description}</p>
                         </div>
                         {/* links */}
-                        <div class="">
+                        <div className="">
                             <h4>Project sources:</h4>
-                            <div class="project_link">
+                            <div className="project_link">
                                 <a href={project.links[0].url} target="_blank">
                                     <FaRegEye className="icon" />
                                     live site

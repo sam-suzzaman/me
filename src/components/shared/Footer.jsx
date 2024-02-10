@@ -6,7 +6,6 @@ const Footer = () => {
     return (
         <Wrapper>
             <p className="f_text">
-                {" "}
                 {data} - All Copyrights Reserved by Samsuzzaman
             </p>
         </Wrapper>

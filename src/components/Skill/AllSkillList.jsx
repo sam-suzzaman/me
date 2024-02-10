@@ -16,8 +16,8 @@ const AllSkillList = () => {
 
     return (
         <Wrapper>
-            {skillData?.map((skill) => {
-                return <SkillIcon skill={skill} />;
+            {skillData?.map((skill, index) => {
+                return <SkillIcon skill={skill} index={index} key={skill.id} />;
             })}
         </Wrapper>
     );

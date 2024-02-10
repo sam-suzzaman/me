@@ -4,7 +4,7 @@ import styled from "styled-components";
 const FilterBar = ({ categories, categoryType, setCategoryType }) => {
     return (
         <Wrapper>
-            <div class="tab_bar_container">
+            <div className="tab_bar_container">
                 <div className="tabs">
                     {categories?.map((category) => {
                         return (

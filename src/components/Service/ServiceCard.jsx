@@ -1,15 +1,34 @@
 import React from "react";
 import styled from "styled-components";
 
-const ServiceCard = ({ service }) => {
+import { motion } from "framer-motion";
+
+const fadeInVariants = {
+    initial: {
+        opacity: 0,
+        y: "100%",
+    },
+    animate: {
+        opacity: 1,
+        y: 0,
+    },
+};
+
+const ServiceCard = ({ service, index }) => {
     return (
-        <Wrapper key={service.id}>
-            <div className="service_icon">{service.id}</div>
-            <div className="card_body">
-                <h4 class="card_title">{service.title}</h4>
-                <p class="card_description">{service.description}</p>
-            </div>
-        </Wrapper>
+        <motion.div
+            initial={fadeInVariants.initial}
+            whileInView={fadeInVariants.animate}
+            transition={{ duration: 0.4, delay: 0.2 * index }}
+        >
+            <Wrapper key={service.id}>
+                <div className="service_icon">{service.id}</div>
+                <div className="card_body">
+                    <h4 className="card_title">{service.title}</h4>
+                    <p className="card_description">{service.description}</p>
+                </div>
+            </Wrapper>
+        </motion.div>
     );
 };
 const Wrapper = styled.div`

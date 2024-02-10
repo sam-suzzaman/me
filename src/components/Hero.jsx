@@ -4,6 +4,16 @@ import { FaRegFilePdf } from "react-icons/fa";
 import styled from "styled-components";
 import { MdOutlineLocalPostOffice } from "react-icons/md";
 
+import { motion } from "framer-motion";
+
+const fadeInVariants = {
+    initial: { opacity: 0, y: 100 },
+    animate: {
+        opacity: 1,
+        y: 0,
+    },
+};
+
 const Hero = () => {
     const [user, setUser] = useState({});
 
@@ -18,30 +28,56 @@ const Hero = () => {
     return (
         <Wrapper>
             <div className="hero_container">
-                <div className="photo_container">
+                <motion.div
+                    className="photo_container"
+                    initial={{ opacity: 0, y: -20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, delay: 0.1 }}
+                    viewport={{ once: true }}
+                >
                     <img src={user?.profile_pic} alt="profile" />
                     <div className="dot"></div>
-                </div>
+                </motion.div>
                 <div className="content">
-                    <h2 className="title">
+                    <motion.h2
+                        className="title"
+                        initial={{ opacity: 0, y: 50, scale: 1.1 }}
+                        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                        transition={{ duration: 0.6, delay: 0 }}
+                        viewport={{ once: true }}
+                    >
                         <span className="fancy1">Hi, I'm</span>{" "}
                         <span className="fancy2">&#123;</span>
                         <span className="fancy">{user.username}</span>
                         <span className="fancy2">&#125;</span>
-                    </h2>
-                    <p className="description">{user?.short_desc}</p>
+                    </motion.h2>
+                    <motion.p
+                        className="description"
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                        viewport={{ once: true }}
+                    >
+                        {user?.short_desc}
+                    </motion.p>
                 </div>
-                <div className="contact-btn-grp">
+                <motion.div
+                    className="contact-btn-grp"
+                    initial={{ opacity: 0, scale: 1.2 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.3, delay: 0.3 }}
+                >
                     <Button
                         name="Hire Me"
                         icon={<MdOutlineLocalPostOffice />}
+                        scrollTo="contact"
                     />
                     <Button
                         name="resume"
                         icon={<FaRegFilePdf />}
                         active={true}
                     />
-                </div>
+                </motion.div>
                 <div className="social-btn-grp"></div>
             </div>
         </Wrapper>

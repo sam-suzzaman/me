@@ -32,3 +32,14 @@
     border-radius: 8px;
     padding: 1rem 0;
 }
+
+.progress-bar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--accent-clr);
+    transform-origin: 0%;
+    z-index: 20;
+}

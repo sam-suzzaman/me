@@ -1,37 +1,71 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import { Reoverlay } from "reoverlay";
 import ModalLayerOneUI from "./ModalLayerOneUI";
 
-const ProjectCard = ({ project }) => {
+import { motion } from "framer-motion";
+
+const fadeInVariants = {
+    // initial: (index) => {
+    //     if (index % 2 == 0) {
+    //         return {
+    //             opacity: 0,
+    //             x: "-100%",
+    //             y: "100%",
+    //         };
+    //     } else {
+    //         return {
+    //             opacity: 0,
+    //             x: "100%",
+    //             y: "100%",
+    //         };
+    //     }
+    // },
+    initial: { opacity: 0, y: 100 },
+    animate: {
+        opacity: 1,
+        y: 0,
+    },
+};
+
+const ProjectCard = ({ project, index }) => {
     const OpenModalLayerOne = () => {
         Reoverlay.showModal("ModalLayerOne", {
             ui: <ModalLayerOneUI project={project} />,
-            // onConfirm: () => {
-            //     console.log("confirmed");
-            // },
         });
     };
     return (
         <Wrapper>
-            <div class="portfolio_card">
-                <div class="card_content">
-                    <img src={project.thumbnail} class="one" alt="BgImage" />
+            <motion.div
+                className="portfolio_card"
+                initial={fadeInVariants.initial}
+                whileInView={fadeInVariants.animate}
+                transition={{ duration: 0.5, delay: 0.02 * index }}
+            >
+                <div className="card_content">
+                    <img
+                        src={project.thumbnail}
+                        className="one"
+                        alt="BgImage"
+                    />
 
-                    <div class="caption">
+                    <div className="caption">
                         <h2>{project.title}</h2>
                         <p>
                             {project.description.length > 90
                                 ? project.description.slice(0, 90) + "..."
                                 : project.description}
                         </p>
-                        <div class="project_links" onClick={OpenModalLayerOne}>
+                        <div
+                            className="project_links"
+                            onClick={OpenModalLayerOne}
+                        >
                             see detail
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </Wrapper>
     );
 };
@@ -97,13 +131,13 @@ const Wrapper = styled.div`
         opacity: 0;
         transform: translateY(100%);
         transition: all 0.4s;
-        padding: 10px 10px;
+        padding: 14px 10px;
         background-color: #fff;
     }
     .portfolio_card .card_content:hover .caption {
         opacity: 1;
         transform: translateY(0);
-        transition-delay: 0.2s;
+        transition-delay: 0.15s;
     }
 
     .portfolio_card .card_content .caption h2 {
@@ -132,7 +166,7 @@ const Wrapper = styled.div`
         letter-spacing: 1px;
         background-color: var(--secondary-clr);
         border-radius: 4px;
-        padding: 5px 16px;
+        padding: 6.5px 16px;
         color: #fff;
         transition: all 0.3s linear;
         margin-top: 6px;

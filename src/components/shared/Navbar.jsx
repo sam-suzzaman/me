@@ -89,7 +89,7 @@ const Navbar = () => {
                 <div className="right">
                     {/* <GoSun className="toggle-icon" /> */}
                     {/* <GoMoon className="toggle-icon" /> */}
-                    <Button name="hire me" active={false} />
+                    <Button name="hire me" scrollTo="contact" />
                 </div>
             </div>
             {/* sidebar */}

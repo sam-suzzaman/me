@@ -17,8 +17,14 @@ const Service = () => {
         <Wrapper>
             <SectionTitle title="what am i offering" subtitle="top features" />
             <div className="service-container">
-                {serviceData?.map((service) => {
-                    return <ServiceCard service={service} />;
+                {serviceData?.map((service, index) => {
+                    return (
+                        <ServiceCard
+                            service={service}
+                            index={index}
+                            key={service.id}
+                        />
+                    );
                 })}
             </div>
         </Wrapper>

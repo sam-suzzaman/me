@@ -16,13 +16,14 @@ const Summery = () => {
     return (
         <Wrapper>
             <div className="skills">
-                {skillData?.map((skill) => {
+                {skillData?.map((skill, index) => {
                     return (
                         <SingleSkillCard
                             key={skill.id}
                             name={skill.name}
                             value={skill.value}
                             status={skill.status}
+                            index={index + 1}
                         />
                     );
                 })}

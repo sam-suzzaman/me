@@ -10,7 +10,7 @@ const ContactForm = () => {
                     action="https://api.web3forms.com/submit"
                     method="POST"
                     className="contact_form_container"
-                    autocomplete="off"
+                    autoComplete="off"
                 >
                     <input
                         type="hidden"
@@ -50,7 +50,11 @@ const ContactForm = () => {
                         required
                     ></textarea>
                     <div className="h-captcha" data-captcha="true"></div>
-                    <input type="submit" value="Submit" className="submit_btn" />
+                    <input
+                        type="submit"
+                        value="Submit"
+                        className="submit_btn"
+                    />
                 </form>
             </div>
         </Wrapper>

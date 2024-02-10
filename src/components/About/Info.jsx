@@ -6,9 +6,9 @@ import { FaRegFilePdf } from "react-icons/fa";
 const Info = () => {
     return (
         <Wrapper>
-            <div class="about_info_container">
-                <div class="info_row">
-                    <div class="left">
+            <div className="about_info_container">
+                <div className="info_row">
+                    <div className="left">
                         <h5>
                             Hi <span>&#9995;</span>
                         </h5>
@@ -35,30 +35,32 @@ const Info = () => {
                             and bring your digital ideas to fruition!
                         </p>
                     </div>
-                    <div class="right">
-                        <div class="name_row single_row">
+                    <div className="right">
+                        <div className="name_row single_row">
                             <h6>Name :</h6>
-                            <span class="">Samsuzzaman</span>
+                            <span className="">Samsuzzaman</span>
                         </div>
-                        <div class="single_row">
+                        <div className="single_row">
                             <h6>address:</h6>
-                            <span class="">Kushtia, Khulna, Bangladesh</span>
+                            <span className="">
+                                Kushtia, Khulna, Bangladesh
+                            </span>
                         </div>
-                        <div class="single_row">
+                        <div className="single_row">
                             <h6>Study:</h6>
-                            <span class="">
+                            <span className="">
                                 Jatiya Kabi Kazi Nazrul Islam University
                             </span>
                         </div>
-                        <div class="single_row">
+                        <div className="single_row">
                             <h6>emial:</h6>
-                            <span class="">00samsuzzaman@gmail.com</span>
+                            <span className="">00samsuzzaman@gmail.com</span>
                         </div>
-                        <div class="single_row">
+                        <div className="single_row">
                             <h6>contact:</h6>
-                            <span class="">+880-01708642294</span>
+                            <span className="">+880-01708642294</span>
                         </div>
-                        <div class="hero_btn_grp">
+                        <div className="hero_btn_grp">
                             <Button name="resume" icon={<FaRegFilePdf />} />
                         </div>
                     </div>

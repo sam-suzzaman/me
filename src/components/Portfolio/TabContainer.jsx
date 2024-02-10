@@ -6,8 +6,14 @@ const TabContainer = ({ projects }) => {
     return (
         <Wrapper>
             <div className="tab_container">
-                {projects?.map((project) => {
-                    return <ProjectCard project={project} />;
+                {projects?.map((project, index) => {
+                    return (
+                        <ProjectCard
+                            project={project}
+                            index={index}
+                            key={project.id}
+                        />
+                    );
                 })}
             </div>
         </Wrapper>
