@@ -19,10 +19,10 @@ const ModalLayerOneUI = ({ project }) => {
     return (
         <Wrapper>
             <div className="modal_content">
-                <h2>{project.title}</h2>
+                <h2>{project?.title}</h2>
                 <div className="content_row">
                     <div className="left">
-                        <img src={project.thumbnail} alt="project thumbnail" />
+                        <img src={project?.thumbnail} alt="project thumbnail" />
                         <div
                             className="overlay"
                             onClick={OpenLayerTwoVideoModal}
@@ -33,30 +33,47 @@ const ModalLayerOneUI = ({ project }) => {
                     <div className="right">
                         <div className="description">
                             <h4>description:</h4>
-                            <p>{project.description}</p>
+                            <p>{project?.description}</p>
                         </div>
                         {/* links */}
                         <div className="">
                             <h4>Project sources:</h4>
                             <div className="project_link">
-                                <a href={project.links[0].url} target="_blank">
-                                    <FaRegEye className="icon" />
-                                    live site
-                                </a>
-                                <a href={project.links[1].url} target="_blank">
-                                    <FaGithub className="icon" />
-                                    client
-                                </a>
-                                <a href={project.links[2].url} target="_blank">
-                                    <FaGithub className="icon" />
-                                    server
-                                </a>
+                                {project?.links[0]?.url && (
+                                    <a
+                                        href={project?.links[0]?.url}
+                                        target="_blank"
+                                    >
+                                        <FaRegEye className="icon" />
+                                        live site
+                                    </a>
+                                )}
+
+                                {project?.links[1]?.url && (
+                                    <a
+                                        href={project?.links[1]?.url}
+                                        target="_blank"
+                                    >
+                                        <FaGithub className="icon" />
+                                        client
+                                    </a>
+                                )}
+
+                                {project?.links[2]?.url && (
+                                    <a
+                                        href={project?.links[2]?.url}
+                                        target="_blank"
+                                    >
+                                        <FaGithub className="icon" />
+                                        server
+                                    </a>
+                                )}
                             </div>
                         </div>
 
                         {/* key features */}
                         <div className="features">
-                            <h4>Key features:</h4>
+                            {project?.features && <h4>Key features:</h4>}
                             <ul className="project-menu">
                                 {project.features?.map((feature) => {
                                     return (
@@ -73,7 +90,7 @@ const ModalLayerOneUI = ({ project }) => {
                         {project?.usedTech?.map((tech) => {
                             return (
                                 <div className="features" key={tech.id}>
-                                    <h4>Used Technologies ({tech.name}):</h4>
+                                    {tech?.name && <h4>Used Technologies ({tech.name}):</h4>}
                                     <ul className="project-menu">
                                         {tech?.techName?.map((item) => {
                                             return (
@@ -144,7 +161,8 @@ const Wrapper = styled.div`
     .modal_content .content_row .left {
         width: 100%;
         max-width: 300px;
-        height: 150px;
+        height: 183px;
+        max-height: 298px;
         border: 1px solid #00000071;
         border-radius: 6px;
         position: relative;
@@ -153,6 +171,7 @@ const Wrapper = styled.div`
 
     .modal_content .left img {
         width: 100%;
+        height: auto;
         object-fit: cover;
         border-radius: 6px;
     }

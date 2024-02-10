@@ -72,8 +72,8 @@ const ProjectCard = ({ project, index }) => {
 
 const Wrapper = styled.div`
     width: 100%;
-    max-width: 550px;
-    height: 300px;
+    max-width: 496px; //550
+    height: 299px; //300
     transition: all 0.5s linear;
 
     .portfolio_card {
@@ -86,14 +86,14 @@ const Wrapper = styled.div`
         width: 100%;
         height: 100%;
         position: relative;
-        border-radius: 6px;
+        border-radius: 8px;
         overflow: hidden;
         position: relative;
         transition: all 0.3s;
         border-left: 3px solid var(--light-border);
         border-top: 3px solid var(--light-border);
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
-        padding: 8px;
+        /* padding: 8px; */
     }
     .portfolio_card .card_content img {
         width: 100%;

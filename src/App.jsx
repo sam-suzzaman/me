@@ -8,6 +8,8 @@ import {
 } from "./components/shared/Modals/Modals";
 import Footer from "./components/shared/Footer";
 import ScrollbarIndicator from "./components/shared/ScrollbarIndicator";
+import Loader from "./components/shared/Loader";
+import { useState } from "react";
 
 // Here you pass your modals to Reoverlay
 Reoverlay.config([
@@ -22,6 +24,15 @@ Reoverlay.config([
 ]);
 
 function App() {
+    const [loading, setLoading] = useState(true);
+
+    window.onload = () => {
+        setLoading(false);
+    };
+
+    if (loading) {
+        return <Loader />;
+    }
     return (
         <>
             <Navbar />

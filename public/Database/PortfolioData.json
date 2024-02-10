@@ -13,10 +13,6 @@
             {
                 "id": 12,
                 "name": "Next JS"
-            },
-            {
-                "id": 13,
-                "name": "HTML/CSS"
             }
         ]
     },
@@ -27,37 +23,60 @@
                 "id": 21,
                 "category": "MERN",
                 "title": "Result Management System (RMS)",
-                "thumbnail": "assets/Portfolio/Thumbnail/rms.png",
-                "description": "This is a Job Portal Web Application which is MERN Stack based application. This application has all the functions of managing the user of the application including posting a job, applying for that job and accepting or rejecting the application. Now we will see the function of the complete application part by part.",
+                "thumbnail": "assets/Portfolio/Thumbnail/rms.svg",
+                "description": "A Result Management System (RMS) is a web-based application through which the results of students studying in an educational institution can be created and managed. A system that is automated is used to computerize this data. Here, computerization is more advantageous than the typical procedure. Thus, an educational institution can profit greatly from a result management system in many ways. Teachers can readily modify and access student data to comply with state regulations and other legal requirements.",
                 "links": [
                     {
                         "id": 211,
                         "name": "live site",
-                        "url": "https://hunter-iota.vercel.app/"
+                        "url": "https://rms1.netlify.app/"
                     },
                     {
                         "id": 212,
                         "name": "client",
-                        "url": "https://github.com/samsuzzaman1998/Hunter-Frontend"
-                    },
-                    {
-                        "id": 213,
-                        "name": "server",
-                        "url": "https://github.com/samsuzzaman1998/Hunter-Backend"
+                        "url": "https://github.com/sam-suzzaman/RMS_Client"
                     }
                 ],
                 "features": [
                     {
                         "id": 211,
-                        "feature": "can add new job"
+                        "feature": "Session creation"
                     },
                     {
                         "id": 212,
-                        "feature": "can apply to a job"
+                        "feature": "Add student (session wise)"
                     },
                     {
                         "id": 213,
-                        "feature": "can see application satus"
+                        "feature": "Add course (semester wise)"
+                    },
+                    {
+                        "id": 214,
+                        "feature": "Search and Filter Results"
+                    },
+                    {
+                        "id": 215,
+                        "feature": "Add Course Teachers"
+                    },
+                    {
+                        "id": 216,
+                        "feature": "Course related CRUD Operations"
+                    },
+                    {
+                        "id": 217,
+                        "feature": "Show pdf after mark submission"
+                    },
+                    {
+                        "id": 218,
+                        "feature": "Marks related CRUD operation"
+                    },
+                    {
+                        "id": 218,
+                        "feature": "Result publishing"
+                    },
+                    {
+                        "id": 219,
+                        "feature": "Showing result in the student profile"
                     }
                 ],
                 "usedTech": [
@@ -67,11 +86,151 @@
                         "techName": [
                             {
                                 "id": 21111,
-                                "name": "html"
+                                "name": "React JS"
                             },
                             {
                                 "id": 21112,
-                                "name": "css"
+                                "name": "Tailwind CSS with Daisy UI"
+                            },
+                            {
+                                "id": 21113,
+                                "name": "Axios"
+                            },
+                            {
+                                "id": 21114,
+                                "name": "React Router Dom"
+                            },
+                            {
+                                "id": 21115,
+                                "name": "React-Hook-Form"
+                            },
+                            {
+                                "id": 21116,
+                                "name": "React-Query"
+                            },
+                            {
+                                "id": 21117,
+                                "name": "React-pdf Renderer"
+                            },
+                            {
+                                "id": 21118,
+                                "name": "React-Toastify"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2211,
+                        "name": "",
+                        "techName": []
+                    }
+                ],
+                "videoURL": "https://www.youtube.com/embed/5779PmlOMbA?si=YAablbs5mCVdZJuw"
+            },
+            {
+                "id": 22,
+                "category": "MERN",
+                "title": "Job Portal Website (Hunter)",
+                "thumbnail": "assets/Portfolio/Thumbnail/hunter.svg",
+                "description": "This is a Job Portal Web Application which is MERN Stack based application. This application has all the functions of managing the user of the application including posting a job, applying for that job and accepting or rejecting the application. Now we will see the function of the complete application part by part.",
+                "links": [
+                    {
+                        "id": 221,
+                        "name": "live site",
+                        "url": "https://hunter-iota.vercel.app/"
+                    },
+                    {
+                        "id": 222,
+                        "name": "client",
+                        "url": "https://github.com/sam-suzzaman/Hunter-Frontend"
+                    },
+                    {
+                        "id": 223,
+                        "name": "server",
+                        "url": "https://github.com/sam-suzzaman/Hunter-Backend"
+                    }
+                ],
+                "features": [
+                    {
+                        "id": 311,
+                        "feature": "Protecting Routes"
+                    },
+                    {
+                        "id": 312,
+                        "feature": "User related (CRUD) operation"
+                    },
+                    {
+                        "id": 313,
+                        "feature": "User Authentication and Authorization"
+                    },
+                    {
+                        "id": 314,
+                        "feature": "Job related (CRUD) operation"
+                    },
+                    {
+                        "id": 315,
+                        "feature": "apply to a job"
+                    },
+                    {
+                        "id": 316,
+                        "feature": "accept/reject application"
+                    },
+                    {
+                        "id": 317,
+                        "feature": "filtering,sorting,ordering jobs"
+                    },
+                    {
+                        "id": 316,
+                        "feature": "pagination"
+                    },
+                    {
+                        "id": 317,
+                        "feature": "Data visualization"
+                    }
+                ],
+                "usedTech": [
+                    {
+                        "id": 2111,
+                        "name": "frontend",
+                        "techName": [
+                            {
+                                "id": 21111,
+                                "name": "React JS"
+                            },
+                            {
+                                "id": 21112,
+                                "name": "Tailwind CSS with Daisy UI"
+                            },
+                            {
+                                "id": 21113,
+                                "name": "Axios"
+                            },
+                            {
+                                "id": 21114,
+                                "name": "React Router Dom"
+                            },
+                            {
+                                "id": 21115,
+                                "name": "React-Hook-Form"
+                            },
+                            {
+                                "id": 21116,
+                                "name": "React-Query"
+                            },
+                            {
+                                "id": 21117,
+                                "name": "Dayjs"
+                            },
+                            {
+                                "id": 21118,
+                                "name": "Sweet Alert"
+                            },
+                            {
+                                "id": 21119,
+                                "name": "React Date Picker"
+                            },
+                            {
+                                "id": 21120,
+                                "name": "React Paginate"
                             }
                         ]
                     },
@@ -80,12 +239,44 @@
                         "name": "backend",
                         "techName": [
                             {
-                                "id": 22111,
-                                "name": "express js"
+                                "id": 21111,
+                                "name": "ExpressJS"
                             },
                             {
-                                "id": 22112,
-                                "name": "mongodb"
+                                "id": 21112,
+                                "name": "Cors"
+                            },
+                            {
+                                "id": 21113,
+                                "name": "Mongoose"
+                            },
+                            {
+                                "id": 21114,
+                                "name": "Dotenv"
+                            },
+                            {
+                                "id": 21115,
+                                "name": "Http-errors"
+                            },
+                            {
+                                "id": 21116,
+                                "name": "bcrypt"
+                            },
+                            {
+                                "id": 21117,
+                                "name": "cookie-parser"
+                            },
+                            {
+                                "id": 21118,
+                                "name": "dayjs"
+                            },
+                            {
+                                "id": 21119,
+                                "name": "express-validator"
+                            },
+                            {
+                                "id": 21120,
+                                "name": "jsonwebtoken"
                             }
                         ]
                     }
@@ -93,76 +284,83 @@
                 "videoURL": "https://www.youtube.com/embed/5779PmlOMbA?si=YAablbs5mCVdZJuw"
             },
             {
-                "id": 22,
-                "category": "HTML/CSS",
-                "title": "Job Portal Website (Hunter)",
-                "thumbnail": "assets/Portfolio/Thumbnail/hunter.png",
-                "description": "This is a Job Portal Web Application which is MERN Stack based application. This application has all the functions of managing the user of the application including posting a job, applying for that job and accepting or rejecting the application. Now we will see the function of the complete application part by part.",
-                "links": [
-                    {
-                        "id": 221,
-                        "name": "live site",
-                        "url": ""
-                    },
-                    {
-                        "id": 222,
-                        "name": "client",
-                        "url": ""
-                    },
-                    {
-                        "id": 223,
-                        "name": "server",
-                        "url": ""
-                    }
-                ]
-            },
-            {
                 "id": 23,
                 "category": "Next JS",
                 "title": "News Portal Website (Xpress)",
-                "thumbnail": "assets/Portfolio/Thumbnail/hunter.png",
-                "description": "This is a Job Portal Web Application which is MERN Stack based application. This application has all the functions of managing the user of the application including posting a job, applying for that job and accepting or rejecting the application. Now we will see the function of the complete application part by part.",
+                "thumbnail": "assets/Portfolio/Thumbnail/xpress.svg",
+                "description": "Xpress is a small, sleek, and responsive news portal built with Next.js. It offers a dynamic browsing experience with features like a hot news ticker, daily updates, category-wise news, and individual article views with user comments. Stay informed and engaged with Xpress, wherever you go.",
                 "links": [
                     {
                         "id": 231,
                         "name": "live site",
-                        "url": ""
+                        "url": "https://x-press.netlify.app/"
                     },
                     {
                         "id": 232,
                         "name": "client",
-                        "url": ""
-                    },
-                    {
-                        "id": 233,
-                        "name": "server",
-                        "url": ""
+                        "url": "https://github.com/sam-suzzaman/Xpress"
                     }
-                ]
-            },
-            {
-                "id": 24,
-                "category": "HTML/CSS",
-                "title": "Job Portal Website (Hunter)",
-                "thumbnail": "assets/Portfolio/Thumbnail/hunter.png",
-                "description": "This is a Job Portal Web Application which is MERN Stack based application. This application has all the functions of managing the user of the application including posting a job, applying for that job and accepting or rejecting the application. Now we will see the function of the complete application part by part.",
-                "links": [
+                ],
+                "features": [
                     {
-                        "id": 241,
-                        "name": "live site",
-                        "url": ""
+                        "id": 311,
+                        "feature": "Hot News Ticker"
                     },
                     {
-                        "id": 242,
-                        "name": "client",
-                        "url": ""
+                        "id": 312,
+                        "feature": "Daily Hot News"
                     },
                     {
-                        "id": 243,
-                        "name": "server",
-                        "url": ""
+                        "id": 313,
+                        "feature": "Category-wise News"
+                    },
+                    {
+                        "id": 314,
+                        "feature": "News filtering"
+                    },
+                    {
+                        "id": 315,
+                        "feature": "Individual News Articles"
+                    },
+                    {
+                        "id": 316,
+                        "feature": "Add and show comments on news"
+                    },
+                    {
+                        "id": 317,
+                        "feature": "Fully Responsive Design"
                     }
-                ]
+                ],
+                "usedTech": [
+                    {
+                        "id": 2111,
+                        "name": "frontend",
+                        "techName": [
+                            {
+                                "id": 21111,
+                                "name": "Next JS"
+                            },
+                            {
+                                "id": 21112,
+                                "name": "React Icons"
+                            },
+                            {
+                                "id": 21113,
+                                "name": "Tailwind CSS"
+                            },
+                            {
+                                "id": 21114,
+                                "name": "Daisy UI"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2211,
+                        "name": "",
+                        "techName": []
+                    }
+                ],
+                "videoURL": "https://www.youtube.com/embed/5779PmlOMbA?si=YAablbs5mCVdZJuw"
             }
         ]
     }
