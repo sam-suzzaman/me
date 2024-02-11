@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
+import ResumeDownloadHandler from "../../utils/ResumeDownloadHandler";
 
 const Button = ({ name, icon, active, scrollTo }) => {
     if (icon && scrollTo) {
@@ -37,7 +38,7 @@ const Button = ({ name, icon, active, scrollTo }) => {
     }
     if (icon && !active) {
         return (
-            <BUTTON>
+            <BUTTON onClick={ResumeDownloadHandler}>
                 <span className="btn_icon">{icon}</span>
                 {name}
             </BUTTON>
@@ -45,7 +46,7 @@ const Button = ({ name, icon, active, scrollTo }) => {
     }
     if (active && icon) {
         return (
-            <BUTTON2>
+            <BUTTON2 onClick={ResumeDownloadHandler}>
                 <span className="btn_icon">{icon}</span>
                 {name}
             </BUTTON2>

@@ -73,7 +73,8 @@ const ProjectCard = ({ project, index }) => {
 const Wrapper = styled.div`
     width: 100%;
     max-width: 496px; //550
-    height: 299px; //300
+    height: auto;
+    max-height: 299px; //300
     transition: all 0.5s linear;
 
     .portfolio_card {
@@ -84,7 +85,7 @@ const Wrapper = styled.div`
 
     .portfolio_card .card_content {
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
         position: relative;
         border-radius: 8px;
         overflow: hidden;
@@ -152,11 +153,11 @@ const Wrapper = styled.div`
     .portfolio_card .card_content .caption p {
         font-size: calc(0.7rem + 0.1vw);
         font-weight: medium;
-        margin-top: 5px;
+        margin-top: calc(2px + 0.2vw);
         text-align: justify;
         padding: 0 calc(8px + 0.5vw);
         color: #000;
-        line-height: 25px;
+        line-height: calc(20px + 0.5vw);
         font-weight: lighter;
     }
     .portfolio_card .card_content .project_links {

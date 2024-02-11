@@ -90,7 +90,11 @@ const ModalLayerOneUI = ({ project }) => {
                         {project?.usedTech?.map((tech) => {
                             return (
                                 <div className="features" key={tech.id}>
-                                    {tech?.name && <h4>Used Technologies ({tech.name}):</h4>}
+                                    {tech?.name && (
+                                        <h4>
+                                            Used Technologies ({tech.name}):
+                                        </h4>
+                                    )}
                                     <ul className="project-menu">
                                         {tech?.techName?.map((item) => {
                                             return (
@@ -116,6 +120,7 @@ const Wrapper = styled.div`
     max-width: 1300px;
     border-radius: 8px;
     padding: calc(1.2rem + 1.5vw) calc(0.8rem + 2vw);
+    position: relative;
     .modal_content h2 {
         text-transform: capitalize;
         font-size: calc(1rem + 0.6vw);

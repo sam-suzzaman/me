@@ -145,14 +145,16 @@ const Wrapper = styled.section`
         bottom: 30px;
         right: 30px;
         cursor: pointer;
-        background-color: var(--accent-clr);
-        color: var(--white-clr);
+        background-color: rgba(0, 0, 0, 0.25);
+        color: var(--primary-clr);
         font-size: 16px;
         padding: 12px;
         border-radius: 4px;
         transition: all 0.3s linear;
+        z-index: 10;
     }
     .scroll_to_top:hover {
+        color: var(--white-clr);
         background-color: var(--secondary-clr);
     }
 `;
