@@ -2,26 +2,26 @@
     {
         "id": 1,
         "title": "Frontend development",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio unde repellat velit quasi nobis quia eaque deleniti accusamus culpa iste?"
+        "description": "Craft captivating user interfaces with our frontend development expertise, blending creativity and functionality seamlessly."
     },
     {
         "id": 2,
         "title": "Landing Page",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio unde repellat velit quasi nobis quia eaque deleniti accusamus culpa iste?"
+        "description": "Drive conversions with visually stunning landing pages tailored to engage and compel action from your visitors."
     },
     {
         "id": 3,
         "title": "Responsive Design",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio unde repellat velit quasi nobis quia eaque deleniti accusamus culpa iste? Lorem ipsum dolor sit, amet consectetur adipisicing elit"
+        "description": "Ensure your website looks great and functions flawlessly on all devices with our responsive design solutions."
     },
     {
         "id": 4,
         "title": "bug fixing",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio unde repellat velit quasi nobis quia eaque deleniti accusamus culpa iste?"
+        "description": "Swiftly resolve website issues with our expert bug fixing services, minimizing downtime and maximizing user satisfaction."
     },
     {
         "id": 5,
         "title": "MERN Application",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio unde repellat velit quasi nobis quia eaque deleniti accusamus culpa iste?"
+        "description": "Harness the power of the MERN stack to build robust and scalable web applications that meet your business needs effectively."
     }
 ]
