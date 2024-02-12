@@ -59,22 +59,31 @@ const ContactInfo = () => {
                 {/* Social Links */}
                 <ul className="contact_social">
                     <li>
-                        <a href="">
+                        <a
+                            href="https://www.facebook.com/withSamsuzzaman/"
+                            target="_blank"
+                        >
                             <FaFacebookF />
                         </a>
                     </li>
-                    <li>
-                        <a href="">
+                    {/* <li>
+                        <a href="" target="_blank">
                             <LuTwitter />
                         </a>
-                    </li>
+                    </li> */}
                     <li>
-                        <a href="">
+                        <a
+                            href="https://github.com/sam-suzzaman"
+                            target="_blank"
+                        >
                             <FaGithub />
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a
+                            href="https://www.linkedin.com/in/md-samsuzzaman-72a937203/"
+                            target="_blank"
+                        >
                             <CiLinkedin />
                         </a>
                     </li>

@@ -11,7 +11,7 @@ const ResumeDownloadHandler = () => {
             link.href = url;
 
             // Set the filename for the download
-            link.setAttribute("download", "resume.pdf");
+            link.setAttribute("download", "samsuzzaman_resume.pdf");
 
             // Append the anchor to the body and trigger the click event
             document.body.appendChild(link);

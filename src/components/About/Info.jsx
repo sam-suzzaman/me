@@ -53,13 +53,23 @@ const Info = () => {
                             </span>
                         </div>
                         <div className="single_row">
+                            <h6>Degree:</h6>
+                            <span className="">
+                                B.Sc in Electrical and Electronic Engineering
+                            </span>
+                        </div>
+                        <div className="single_row">
                             <h6>emial:</h6>
                             <span className="">00samsuzzaman@gmail.com</span>
                         </div>
                         <div className="single_row">
+                            <h6>Status:</h6>
+                            <span className="">Available</span>
+                        </div>
+                        {/* <div className="single_row">
                             <h6>contact:</h6>
                             <span className="">+880-01708642294</span>
-                        </div>
+                        </div> */}
                         <div className="hero_btn_grp">
                             <Button name="resume" icon={<FaRegFilePdf />} />
                         </div>

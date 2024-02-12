@@ -96,35 +96,36 @@ const Wrapper = styled.div`
     }
     .photo_container {
         width: 100%;
-        max-width: 200px;
+        max-width: 220px;
         border-radius: 50%;
         position: relative;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+        padding-top: calc(0.8rem + 0.5vw);
         padding-bottom: 0;
     }
     .photo_container .dot {
-        width: 14px;
-        height: 14px;
+        width: 15px;
+        height: 15px;
         border-radius: 50%;
-        background-color: #0064b3;
+        background-color: #00a2ff;
         position: absolute;
-        bottom: 14px;
-        right: 34px;
+        bottom: 23px;
+        right: 32px;
         transform: scale(1);
         animation: glow 4s ease 0s infinite normal forwards running;
     }
     @keyframes glow {
         0% {
-            background-color: #025ea4;
+            background-color: #00a2ff;
             transform: scale(1);
         }
         50% {
-            background-color: #2c85c9;
+            background-color: #0073b5;
             transform: scale(1.1);
         }
         100% {
             transform: scale(1);
-            background-color: #025ea4;
+            background-color: #00a2ff;
         }
     }
 
