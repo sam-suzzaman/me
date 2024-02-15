@@ -40,6 +40,9 @@ const Wrapper = styled.div`
     height: 100%;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
 
+    @media screen and (max-width: 1000px) {
+        padding: calc(30px + 1vw) calc(10px + 1vw) calc(10px + 1vw);
+    }
     &:hover {
         background-color: var(--primary-clr);
     }

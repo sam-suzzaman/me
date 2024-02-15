@@ -21,14 +21,12 @@ const SkillIcon = ({ skill, index }) => {
             transition={{ duration: 0.5, delay: 0.06 * index }}
         >
             <Wrapper>
-                <div>
-                    <div className="icon">
-                        <img src={skill.pic} alt="icon" />
-                    </div>
-                    <div className="content">
-                        <h6 className="title">{skill.name}</h6>
-                        <p className="status">{skill.status}</p>
-                    </div>
+                <div className="icon">
+                    <img src={skill.pic} alt="icon" />
+                </div>
+                <div className="content">
+                    <h6 className="title">{skill.name}</h6>
+                    <p className="status">{skill.status}</p>
                 </div>
             </Wrapper>
         </motion.div>
