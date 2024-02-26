@@ -1393,8 +1393,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     .hero_wrapper {
         background-image: linear-gradient(
                 to top,
-                rgba(255, 255, 255, 0.9),
-                rgba(255, 255, 255, 0.85)
+                rgba(255, 255, 255, 0.85),
+                rgba(255, 255, 255, 0.9)
             ),
             url("assets/bg.jpg");
         background-size: cover;
