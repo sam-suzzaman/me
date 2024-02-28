@@ -24,15 +24,15 @@ Reoverlay.config([
 ]);
 
 function App() {
-    const [loading, setLoading] = useState(true);
+    // const [loading, setLoading] = useState(true);
 
-    window.onload = () => {
-        setLoading(false);
-    };
+    // window.onload = () => {
+    //     setLoading(false);
+    // };
 
-    if (loading) {
-        return <Loader />;
-    }
+    // if (loading) {
+    //     return <Loader />;
+    // }
     return (
         <>
             <Navbar />
