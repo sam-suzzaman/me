@@ -7,25 +7,31 @@ import ModalLayerOneUI from "./ModalLayerOneUI";
 import { motion } from "framer-motion";
 
 const fadeInVariants = {
-    // initial: (index) => {
-    //     if (index % 2 == 0) {
-    //         return {
-    //             opacity: 0,
-    //             x: "-100%",
-    //             y: "100%",
-    //         };
-    //     } else {
-    //         return {
-    //             opacity: 0,
-    //             x: "100%",
-    //             y: "100%",
-    //         };
-    //     }
-    // },
-    initial: { opacity: 0, y: 100 },
-    animate: {
-        opacity: 1,
-        y: 0,
+    initial: (index) => {
+        if (index % 2 == 0) {
+            return {
+                opacity: 0,
+                translateX: -300,
+                translateY: 100,
+            };
+        } else {
+            return {
+                opacity: 0,
+                translateX: 300,
+                translateY: 100,
+            };
+        }
+    },
+    animate: (index) => {
+        return {
+            opacity: 1,
+            translateX: 0,
+            translateY: 0,
+            transition: {
+                duration: 0.4,
+                delay: 0.3 * index,
+            },
+        };
     },
 };
 
@@ -39,10 +45,17 @@ const ProjectCard = ({ project, index }) => {
         <Wrapper>
             <motion.div
                 className="portfolio_card"
+                variants={fadeInVariants}
+                initial="initial"
+                animate="animate"
+                custom={index}
+            >
+                {/* <motion.div
+                className="portfolio_card"
                 initial={fadeInVariants.initial}
                 whileInView={fadeInVariants.animate}
                 transition={{ duration: 0.5, delay: 0.02 * index }}
-            >
+            > */}
                 <div className="card_content">
                     <img
                         src={project.thumbnail}

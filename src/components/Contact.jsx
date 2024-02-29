@@ -13,7 +13,7 @@ const Contact = () => {
                 <ContactInfo />
                 <ContactForm />
             </div>
-            <Location />
+            {/* <Location /> */}
         </Wrapper>
     );
 };

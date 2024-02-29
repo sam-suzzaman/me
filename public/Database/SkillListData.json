@@ -64,5 +64,11 @@
         "pic": "assets/Skill/next.png",
         "name": "nextJs",
         "status": "begineer"
+    },
+    {
+        "id": 12,
+        "pic": "assets/Skill/redux.png",
+        "name": "redux",
+        "status": "flexible"
     }
 ]

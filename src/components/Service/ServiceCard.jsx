@@ -20,6 +20,7 @@ const ServiceCard = ({ service, index }) => {
             initial={fadeInVariants.initial}
             whileInView={fadeInVariants.animate}
             transition={{ duration: 0.4, delay: 0.2 * index }}
+            viewport={{ once: true }}
         >
             <Wrapper key={service.id}>
                 <div className="service_icon">{service.id}</div>
