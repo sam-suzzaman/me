@@ -139,6 +139,7 @@ const Wrapper = styled.section`
     }
     .about_wrapper {
         background-color: var(--section-bg-clr);
+        /* background-color: var(--section-bg-clr); */
     }
     .scroll_to_top {
         position: fixed;
