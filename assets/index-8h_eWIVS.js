@@ -1409,6 +1409,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
     .about_wrapper {
         background-color: var(--section-bg-clr);
+        /* background-color: var(--section-bg-clr); */
     }
     .scroll_to_top {
         position: fixed;
