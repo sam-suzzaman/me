@@ -1145,7 +1145,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     .photo_container {
         width: 100%;
         max-width: 220px;
-        height: 220px;
+        min-height: 220px;
         border-radius: 50%;
         position: relative;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
