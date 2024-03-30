@@ -6,6 +6,8 @@ import { MdOutlineLocalPostOffice } from "react-icons/md";
 
 import { motion } from "framer-motion";
 
+import profile from "../assets/profile.png";
+
 const fadeInVariants = {
     initial: { opacity: 0, y: 100 },
     animate: {
@@ -35,7 +37,7 @@ const Hero = () => {
                     transition={{ duration: 0.3, delay: 0.1 }}
                     viewport={{ once: true }}
                 >
-                    <img src={user?.profile_pic} alt="profile" />
+                    <img src={profile} alt="profile" />
                     <div className="dot"></div>
                 </motion.div>
                 <div className="content">
