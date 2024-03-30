@@ -37,7 +37,7 @@ const Hero = () => {
                     transition={{ duration: 0.3, delay: 0.1 }}
                     viewport={{ once: true }}
                 >
-                    <img src={profile} alt="profile" />
+                    <img src={profile} alt="profile" width={220} height={220} />
                     <div className="dot"></div>
                 </motion.div>
                 <div className="content">
@@ -99,6 +99,7 @@ const Wrapper = styled.div`
     .photo_container {
         width: 100%;
         max-width: 220px;
+        height: 220px;
         border-radius: 50%;
         position: relative;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
