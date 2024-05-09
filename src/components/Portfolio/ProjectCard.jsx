@@ -121,20 +121,27 @@ const Wrapper = styled.div`
         left: 0px;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        /* background-color: rgba(0, 0, 0, 0.5); */
+        background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.01)
+        );
         transition: all 0.6s;
         transition-delay: 0.1s;
-        transform: scale(0);
+        transform: scale(0) translateY(100%);
+        transform-origin: bottom;
         opacity: 0;
     }
     .portfolio_card .card_content:hover:before {
-        transform: scale(1);
+        transform: scale(1) translateY(0);
         opacity: 1;
         transition-delay: 0s;
     }
     .portfolio_card .card_content .caption {
         position: absolute;
         bottom: 0;
+        right: 0;
         left: 0;
         display: flex;
         flex-direction: column;
@@ -146,7 +153,7 @@ const Wrapper = styled.div`
         transform: translateY(100%);
         transition: all 0.4s;
         padding: 14px 10px;
-        background-color: #fff;
+        background-color: #eaeaea;
     }
     .portfolio_card .card_content:hover .caption {
         opacity: 1;
@@ -158,19 +165,19 @@ const Wrapper = styled.div`
         text-transform: capitalize;
         font-weight: medium;
         margin: 0;
-        font-size: calc(1rem + 0.15vw);
+        font-size: calc(0.9rem + 0.12vw);
         color: var(--secondary-clr);
         text-align: center;
         line-height: 28px;
     }
     .portfolio_card .card_content .caption p {
-        font-size: calc(0.7rem + 0.1vw);
+        font-size: calc(0.7rem);
         font-weight: medium;
         margin-top: calc(2px + 0.2vw);
         text-align: justify;
         padding: 0 calc(8px + 0.5vw);
         color: #000;
-        line-height: calc(20px + 0.5vw);
+        line-height: calc(14px + 0.5vw);
         font-weight: lighter;
     }
     .portfolio_card .card_content .project_links {

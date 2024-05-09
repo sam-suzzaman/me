@@ -80,13 +80,13 @@ const SingleSkillCard = ({ index, name, value, status }) => {
                 <text
                     className="value"
                     x="50%"
-                    y="55%"
+                    y="57%"
                     textAnchor="middle"
-                    fontSize="calc(0.7rem + 0.1vw)"
+                    fontSize="calc(0.8rem + 0.2vw)"
                     fontWeight="700"
                     letterSpacing="1px"
                 >
-                    {value}%
+                    {/* {value}% */}+
                 </text>
             </svg>
             <h4 className="title">{name}</h4>

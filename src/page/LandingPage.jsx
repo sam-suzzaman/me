@@ -83,14 +83,14 @@ const LandingPage = () => {
                 </div>
             </Element>
             <Element name="service">
-                <div className="section">
+                <div className="section section-not-full-h">
                     <div className="sec_container">
                         <Service />
                     </div>
                 </div>
             </Element>
             <Element name="portfolio">
-                <div className="section">
+                <div className="section section-not-full-h">
                     <div className="sec_container">
                         <Portfolio />
                     </div>
@@ -110,6 +110,9 @@ const LandingPage = () => {
 const Wrapper = styled.section`
     .section {
         min-height: calc(100vh - 60px);
+    }
+    .section-not-full-h {
+        min-height: fit-content;
     }
     .sec_container {
         height: 100%;

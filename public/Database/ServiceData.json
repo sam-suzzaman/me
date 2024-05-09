@@ -6,21 +6,11 @@
     },
     {
         "id": 2,
-        "title": "Landing Page",
-        "description": "Drive conversions with visually stunning landing pages tailored to engage and compel action from your visitors."
-    },
-    {
-        "id": 3,
         "title": "Responsive Design",
         "description": "Ensure your website looks great and functions flawlessly on all devices with our responsive design solutions."
     },
     {
-        "id": 4,
-        "title": "bug fixing",
-        "description": "Swiftly resolve website issues with our expert bug fixing services, minimizing downtime and maximizing user satisfaction."
-    },
-    {
-        "id": 5,
+        "id": 3,
         "title": "MERN Application",
         "description": "Harness the power of the MERN stack to build robust and scalable web applications that meet your business needs effectively."
     }

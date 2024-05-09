@@ -8,20 +8,20 @@ import { Reoverlay } from "reoverlay";
 import LayerTwoVideoModalUI from "./LayerTwoVideoModalUI";
 
 const ModalLayerOneUI = ({ project }) => {
-    const showModal = () => {
-        Reoverlay.showModal("LayerTwoVideoModal");
-    };
-    const OpenLayerTwoVideoModal = () => {
-        Reoverlay.showModal("LayerTwoVideoModal", {
-            ui: <LayerTwoVideoModalUI url={project.videoURL} />,
-        });
-    };
+    // const showModal = () => {
+    //     Reoverlay.showModal("LayerTwoVideoModal");
+    // };
+    // const OpenLayerTwoVideoModal = () => {
+    //     Reoverlay.showModal("LayerTwoVideoModal", {
+    //         ui: <LayerTwoVideoModalUI url={project.videoURL} />,
+    //     });
+    // };
     return (
         <Wrapper>
             <div className="modal_content">
                 <h2>{project?.title}</h2>
                 <div className="content_row">
-                    <div className="left">
+                    {/* <div className="left">
                         <img src={project?.thumbnail} alt="project thumbnail" />
                         <div
                             className="overlay"
@@ -29,7 +29,7 @@ const ModalLayerOneUI = ({ project }) => {
                         >
                             <FaCirclePlay className="icon" />
                         </div>
-                    </div>
+                    </div> */}
                     <div className="right">
                         <div className="description">
                             <h4>description:</h4>
@@ -117,7 +117,7 @@ const ModalLayerOneUI = ({ project }) => {
 
 const Wrapper = styled.div`
     width: 100%;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     border-radius: 8px;
     padding: calc(1.2rem + 1.5vw) calc(0.8rem + 2vw);
     position: relative;
@@ -143,27 +143,27 @@ const Wrapper = styled.div`
         opacity: 0.6;
     }
     .modal_content .content_row {
-        display: grid;
+        /* display: grid;
         grid-template-columns: minmax(auto, 300px) 1fr;
         justify-content: space-between;
-        column-gap: calc(1rem + 2.2vw);
+        column-gap: calc(1rem + 2.2vw); */
         margin-top: calc(1rem + 2vw);
     }
     @media screen and (max-width: 850px) {
         .modal_content .content_row {
-            display: flex;
+            /* display: flex;
             flex-direction: column-reverse;
-            row-gap: 2rem;
+            row-gap: 2rem; */
             margin-top: 3rem;
         }
-        .modal_content .content_row .left {
+        /* .modal_content .content_row .left {
             width: 100%;
             max-width: 300px;
             margin: 0 auto;
-        }
+        } */
     }
 
-    .modal_content .content_row .left {
+    /* .modal_content .content_row .left {
         width: 100%;
         max-width: 300px;
         height: 183px;
@@ -172,16 +172,16 @@ const Wrapper = styled.div`
         border-radius: 6px;
         position: relative;
         overflow: hidden;
-    }
+    } */
 
-    .modal_content .left img {
+    /* .modal_content .left img {
         width: 100%;
         height: auto;
         object-fit: cover;
         border-radius: 6px;
-    }
+    } */
 
-    .modal_content .left .overlay {
+    /* .modal_content .left .overlay {
         position: absolute;
         top: 0;
         left: 0;
@@ -201,15 +201,15 @@ const Wrapper = styled.div`
     }
     .modal_content .left .overlay .icon:hover {
         color: var(--accent-clr);
-    }
+    } */
     .modal_content .right h4 {
         text-transform: capitalize;
         color: var(--primary-clr);
-        font-size: 17px;
+        font-size: calc(17px + 0.1vw);
         font-weight: normal;
     }
     .modal_content .right .description p {
-        font-size: 13.5px;
+        font-size: calc(13.5px + 0.12vw);
         font-weight: 400;
         text-align: justify;
         margin-top: 7px;
@@ -231,7 +231,7 @@ const Wrapper = styled.div`
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        font-size: 13px;
+        font-size: 14px;
         text-transform: capitalize;
         font-weight: medium;
         background-color: var(--neutral-clr);
@@ -259,13 +259,14 @@ const Wrapper = styled.div`
         align-items: center;
         color: var(--black-clr);
         text-transform: capitalize;
-        font-size: 13px;
+        font-size: calc(13px + 0.12vw);
         margin-bottom: 8px;
     }
     ul.project-menu li .icon {
         margin-right: 8px;
         font-size: 17px;
-        color: var(--black-clr);
+        /* color: var(--black-clr); */
+        color: var(--secondary-clr);
     }
 `;
 

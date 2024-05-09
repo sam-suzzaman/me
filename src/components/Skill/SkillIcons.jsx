@@ -53,34 +53,33 @@ const Wrapper = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* background-color: var(--neutral-clr); */
-        background-color: #0091ffea;
+        background-color: rgba(0, 0, 0, 0.75);
         border-radius: 4px;
-        transform: scale(0);
-        opacity: 0;
-        transition: all 0.3s linear;
+        transform: scale(0) translateY(100%);
+        transition: all 0.3s ease-in-out;
+        transform-origin: bottom;
     }
     &:hover {
         .content {
-            transform: scale(1);
+            transform: scale(1) translateY(0);
             opacity: 1;
         }
     }
     .content .title {
-        color: #fff;
-        font-weight: normal;
-        font-size: calc(12px + 0.2vw);
+        color: gold;
+        font-weight: bold;
+        font-size: calc(10px + 0.3vw);
         letter-spacing: 0.5px;
         text-transform: uppercase;
     }
     .content .status {
-        color: #000;
-        font-weight: lighter;
+        color: var(--primary-);
+        font-weight: normal;
         font-size: 12px;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.8px;
         text-transform: capitalize;
         margin-top: 7px;
-        background-color: #cce9ff8d;
+        background-color: #ffffffe1;
         padding: 1px 8px;
         border-radius: 4px;
     }
@@ -95,11 +94,15 @@ const Wrapper = styled.div`
     .icon img {
         width: 100%;
         object-fit: cover;
-        transform: scale(1);
-        transition: all 0.3s linear;
+        /* transform: scale(1); */
+        /* -webkit-filter: grayscale(100%);
+        filter: grayscale(100%); */
+        /* transition: all 0.3s linear; */
     }
     &:hover .icon img {
-        transform: scale(1.3);
+        /* -webkit-filter: grayscale(10%);
+        filter: grayscale(10%); */
+        /* transform: scale(1.2); */
     }
 `;
 export default SkillIcon;

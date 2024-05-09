@@ -33,19 +33,21 @@ const ServiceCard = ({ service, index }) => {
     );
 };
 const Wrapper = styled.div`
-    border: 1px solid var(--light-border);
+    /* border: 1px solid var(--light-border); */
     padding: calc(18px + 1.7vw) calc(10px + 1vw) calc(10px + 1vw);
     border-radius: 6px;
     position: relative;
     transition: all 0.4s linear;
     height: 100%;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 
     @media screen and (max-width: 1000px) {
         padding: calc(30px + 1vw) calc(10px + 1vw) calc(10px + 1vw);
     }
     &:hover {
-        background-color: var(--primary-clr);
+        /* background-color: var(--primary-clr); */
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     }
 
     .service_icon {
@@ -55,7 +57,7 @@ const Wrapper = styled.div`
         right: 0;
         transform: translate(-50%, -50%);
         color: var(--secondary-clr);
-        font-size: calc(20px + 1.2vw);
+        font-size: calc(18px + 1vw);
         font-family: var(--font-poppins);
         font-weight: bold;
         background-color: var(--white-clr);
@@ -71,10 +73,8 @@ const Wrapper = styled.div`
         transition-delay: 0.1s;
     }
     &:hover .service_icon {
-        background-color: var(--primary-clr);
-        color: #fff;
         opacity: 1;
-        border: none;
+        border: 1px solid var(--primary-clr);
     }
     .card_body .card_title {
         font-size: calc(0.95rem + 0.35vw);
@@ -88,12 +88,10 @@ const Wrapper = styled.div`
         transition: all 0.5s linear;
         transition-delay: 0.1s;
     }
-    &:hover .card_body .card_title {
-        color: #fff;
-    }
     .card_body .card_description {
         font-size: calc(0.75rem + 0.1vw);
         font-weight: lighter;
+        opacity: 0.7;
         font-family: var(--font-poppins);
         text-align: justify;
         color: var(--black-clr);
@@ -103,7 +101,7 @@ const Wrapper = styled.div`
         transition-delay: 0.1s;
     }
     &:hover .card_body .card_description {
-        color: #fff;
+        opacity: 0.95;
     }
 `;
 export default ServiceCard;
