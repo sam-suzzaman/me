@@ -103,6 +103,11 @@ const Wrapper = styled.div`
         color: var(--black-clr);
         opacity: 0.9;
     }
+    @media screen and (max-width: 900px) {
+        & {
+            order: 2;
+        }
+    }
     .address_sec {
         margin-top: 2.5rem;
     }

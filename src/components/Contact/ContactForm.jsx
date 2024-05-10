@@ -62,6 +62,11 @@ const ContactForm = () => {
 };
 
 const Wrapper = styled.div`
+    @media screen and (max-width: 900px) {
+        & {
+            order: 1;
+        }
+    }
     .right label {
         color: var(--black-clr);
         opacity: 0.7;

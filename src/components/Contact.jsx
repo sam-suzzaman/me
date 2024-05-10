@@ -35,12 +35,12 @@ const Wrapper = styled.div`
             grid-column-gap: 0;
             justify-content: center;
         }
-        .contact_container .left {
+        /* .contact_container .left {
             order: 2;
         }
         .contact_container .right {
             order: 1;
-        }
+        } */
     }
     .contact_container h4 {
         text-transform: uppercase;

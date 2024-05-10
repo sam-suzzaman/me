@@ -108,9 +108,12 @@ const Wrapper = styled.nav`
     top: 0;
     width: 100%;
     height: 60px;
-    background-color: var(--primary-clr);
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     @media screen and (max-width: 1200px) {
         padding: 0 1.5rem;
     }
@@ -130,7 +133,7 @@ const Wrapper = styled.nav`
         height: 100vh;
         width: 80vw;
         max-width: 250px;
-        background-color: var(--primary-clr);
+        background-color: var(--white-clr);
         transition: all 0.3s linear;
         transform: translateX(-100%);
     }
@@ -142,7 +145,7 @@ const Wrapper = styled.nav`
         font-weight: bold;
         font-size: calc(1.7rem + 1vw);
         text-decoration: none;
-        color: var(--white-clr);
+        color: var(--primary-clr);
     }
     .sidebar-inner-container {
         height: 100%;
@@ -164,10 +167,11 @@ const Wrapper = styled.nav`
         list-style: none;
     }
     .menu li a {
-        color: var(--white-clr);
+        color: var(--black-clr);
+        opacity: 0.9;
         text-decoration: none;
         text-transform: capitalize;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: light;
         font-family: var(--font-poppins);
         letter-spacing: 0.5px;
@@ -223,7 +227,7 @@ const Wrapper = styled.nav`
         font-family: var(--font-roboto);
     }
     .toggler .toggle-icon {
-        color: var(--white-clr);
+        color: var(--primary-clr);
         font-size: 26px;
         cursor: pointer;
         font-weight: bold;
