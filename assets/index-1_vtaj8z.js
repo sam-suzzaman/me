@@ -617,10 +617,11 @@ Error generating stack: `+o.message+`
     }
     .tabs {
         display: inline-flex;
+        gap: 6px;
         margin: 0 auto;
         justify-content: center;
         align-items: center;
-        background-color: var(--neutral-clr);
+        /* background-color: var(--neutral-clr); */
     }
 
     .tabs .tab_btn {
@@ -628,21 +629,21 @@ Error generating stack: `+o.message+`
         border: none;
         border-right: 1px solid var(--light-border);
         outline: none;
-        background-color: transparent;
+        background-color: #eee;
         font-size: calc(0.75rem + 0.1vw);
         color: var(--primary-clr);
         font-weight: medium;
         font-family: var(--font-roboto);
-        padding: 10px calc(1.5rem + 2vw);
+        padding: 10px calc(1.2rem + 1.5vw);
         cursor: pointer;
         transition: all 0.4s linear;
     }
     .tabs .tab_btn:hover {
-        background-color: var(--primary-clr);
+        background-color: var(--secondary-clr);
         color: var(--white-clr);
     }
     .tabs .tab_btn.active {
-        background-color: var(--primary-clr);
+        background-color: var(--secondary-clr);
         color: var(--white-clr);
     }
     .tabs .tab_btn:last-child {
@@ -688,7 +689,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
 `;const OE=({project:e})=>{var t,n,r,i,o,s,a,l;return h.jsx(ME,{children:h.jsxs("div",{className:"modal_content",children:[h.jsx("h2",{children:e==null?void 0:e.title}),h.jsx("div",{className:"content_row",children:h.jsxs("div",{className:"right",children:[h.jsxs("div",{className:"description",children:[h.jsx("h4",{children:"description:"}),h.jsx("p",{children:e==null?void 0:e.description})]}),h.jsxs("div",{className:"",children:[h.jsx("h4",{children:"Project sources:"}),h.jsxs("div",{className:"project_link",children:[((t=e==null?void 0:e.links[0])==null?void 0:t.url)&&h.jsxs("a",{href:(n=e==null?void 0:e.links[0])==null?void 0:n.url,target:"_blank",children:[h.jsx(Ak,{className:"icon"}),"live site"]}),((r=e==null?void 0:e.links[1])==null?void 0:r.url)&&h.jsxs("a",{href:(i=e==null?void 0:e.links[1])==null?void 0:i.url,target:"_blank",children:[h.jsx(Au,{className:"icon"}),"client"]}),((o=e==null?void 0:e.links[2])==null?void 0:o.url)&&h.jsxs("a",{href:(s=e==null?void 0:e.links[2])==null?void 0:s.url,target:"_blank",children:[h.jsx(Au,{className:"icon"}),"server"]})]})]}),h.jsxs("div",{className:"features",children:[(e==null?void 0:e.features)&&h.jsx("h4",{children:"Key features:"}),h.jsx("ul",{className:"project-menu",children:(a=e.features)==null?void 0:a.map(u=>h.jsxs("li",{children:[h.jsx(Wh,{className:"icon"}),u.feature]},u.id))})]}),(l=e==null?void 0:e.usedTech)==null?void 0:l.map(u=>{var c;return h.jsxs("div",{className:"features",children:[(u==null?void 0:u.name)&&h.jsxs("h4",{children:["Used Technologies (",u.name,"):"]}),h.jsx("ul",{className:"project-menu",children:(c=u==null?void 0:u.techName)==null?void 0:c.map(f=>h.jsxs("li",{children:[h.jsx(Wh,{className:"icon"}),f.name]},f.id))})]},u.id)})]})})]})})},ME=Y.div`
     width: 100%;
-    /* max-width: 1300px; */
+    /* max-width: 700px; */
     border-radius: 8px;
     padding: calc(1.2rem + 1.5vw) calc(0.8rem + 2vw);
     position: relative;
