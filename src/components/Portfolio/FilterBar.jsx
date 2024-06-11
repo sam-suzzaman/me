@@ -36,10 +36,11 @@ const Wrapper = styled.div`
     }
     .tabs {
         display: inline-flex;
+        gap: 6px;
         margin: 0 auto;
         justify-content: center;
         align-items: center;
-        background-color: var(--neutral-clr);
+        /* background-color: var(--neutral-clr); */
     }
 
     .tabs .tab_btn {
@@ -47,21 +48,21 @@ const Wrapper = styled.div`
         border: none;
         border-right: 1px solid var(--light-border);
         outline: none;
-        background-color: transparent;
+        background-color: #eee;
         font-size: calc(0.75rem + 0.1vw);
         color: var(--primary-clr);
         font-weight: medium;
         font-family: var(--font-roboto);
-        padding: 10px calc(1.5rem + 2vw);
+        padding: 10px calc(1.2rem + 1.5vw);
         cursor: pointer;
         transition: all 0.4s linear;
     }
     .tabs .tab_btn:hover {
-        background-color: var(--primary-clr);
+        background-color: var(--secondary-clr);
         color: var(--white-clr);
     }
     .tabs .tab_btn.active {
-        background-color: var(--primary-clr);
+        background-color: var(--secondary-clr);
         color: var(--white-clr);
     }
     .tabs .tab_btn:last-child {

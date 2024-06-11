@@ -117,7 +117,7 @@ const ModalLayerOneUI = ({ project }) => {
 
 const Wrapper = styled.div`
     width: 100%;
-    /* max-width: 1300px; */
+    /* max-width: 700px; */
     border-radius: 8px;
     padding: calc(1.2rem + 1.5vw) calc(0.8rem + 2vw);
     position: relative;

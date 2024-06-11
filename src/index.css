@@ -27,7 +27,7 @@
 .reOverlay .reOverlay__modalWrapper .reOverlay__modalContainer {
     height: 90vh;
     width: 100%;
-    max-width: 90vw;
+    max-width: 800px;
     overflow-y: auto;
     border-radius: 8px;
     padding: 1rem 0;
@@ -35,11 +35,53 @@
 
 .progress-bar {
     position: fixed;
-    top: 60px;
+    top: 0px;
     left: 0;
     right: 0;
-    height: 3px;
-    background: rgba(0, 0, 0, 0.2);
+    height: 5px;
+    /* background: rgba(0, 0, 0, 0.4); */
+    background: linear-gradient(to left, #005a9e, #48affe);
     transform-origin: 0%;
     z-index: 20;
+}
+
+/* Styling Scrollbar of Modal*/
+/* WebKit Browsers (Chrome, Safari, Edge) */
+.reOverlay
+    .reOverlay__modalWrapper
+    .reOverlay__modalContainer::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.reOverlay
+    .reOverlay__modalWrapper
+    .reOverlay__modalContainer::-webkit-scrollbar-track {
+    background: #eee;
+    border-radius: 20px;
+}
+
+.reOverlay
+    .reOverlay__modalWrapper
+    .reOverlay__modalContainer::-webkit-scrollbar-thumb {
+    background: var(--accent-clr);
+    border-radius: 20px;
+}
+
+.reOverlay
+    .reOverlay__modalWrapper
+    .reOverlay__modalContainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Firefox */
+.reOverlay .reOverlay__modalWrapper .reOverlay__modalContainer {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-clr) #eee;
+    scrollbar-border-radius: 20px;
+}
+
+/* Edge (older versions using -ms-scrollbar) */
+.reOverlay .reOverlay__modalWrapper .reOverlay__modalContainer {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
 }
