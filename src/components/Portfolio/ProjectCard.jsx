@@ -85,9 +85,9 @@ const ProjectCard = ({ project, index }) => {
 
 const Wrapper = styled.div`
     width: 100%;
-    max-width: 496px; //550
+    max-width: 350px; //550,496
     height: auto;
-    max-height: 299px; //300
+    max-height: 350px; //300,299
     transition: all 0.5s linear;
 
     .portfolio_card {

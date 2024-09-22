@@ -41,8 +41,9 @@ const Wrapper = styled.div`
     }
     .sec_title .subtitle {
         font-family: var(--font-poppins);
-        font-size: calc(0.7rem + 0.3vw);
+        font-size: calc(0.75rem + 0.3vw);
         font-weight: medium;
+        font-style: italic;
         text-transform: capitalize;
         letter-spacing: 1px;
         color: var(--secondary-clr);

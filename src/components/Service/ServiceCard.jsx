@@ -33,7 +33,6 @@ const ServiceCard = ({ service, index }) => {
     );
 };
 const Wrapper = styled.div`
-    /* border: 1px solid var(--light-border); */
     padding: calc(18px + 1.7vw) calc(10px + 1vw) calc(10px + 1vw);
     border-radius: 6px;
     position: relative;
@@ -89,7 +88,7 @@ const Wrapper = styled.div`
         transition-delay: 0.1s;
     }
     .card_body .card_description {
-        font-size: calc(0.75rem + 0.1vw);
+        font-size: calc(0.8rem + 0.1vw);
         font-weight: lighter;
         opacity: 0.7;
         font-family: var(--font-poppins);

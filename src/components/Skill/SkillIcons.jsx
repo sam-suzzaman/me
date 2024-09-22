@@ -21,29 +21,36 @@ const SkillIcon = ({ skill, index }) => {
             transition={{ duration: 0.5, delay: 0.06 * index }}
         >
             <Wrapper>
-                <div className="icon">
+                <img src={skill.pic} alt="icon" className="iconImg" />
+                {/* <div className="icon">
                     <img src={skill.pic} alt="icon" />
-                </div>
-                <div className="content">
+                </div> */}
+                {/* <div className="content">
                     <h6 className="title">{skill.name}</h6>
                     <p className="status">{skill.status}</p>
-                </div>
+                </div> */}
             </Wrapper>
         </motion.div>
     );
 };
 const Wrapper = styled.div`
-    width: 140px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border: 1px solid var(--light-border);
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    position: relative;
-    overflow: hidden;
+    padding: 16px;
+    /* position: relative;
+    overflow: hidden; */
 
-    .content {
+    .iconImg {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* .content {
         position: absolute;
         top: 0;
         left: 0;
@@ -82,7 +89,7 @@ const Wrapper = styled.div`
         background-color: #ffffffe1;
         padding: 1px 8px;
         border-radius: 4px;
-    }
+    } */
     .icon {
         width: 100%;
         height: 100%;

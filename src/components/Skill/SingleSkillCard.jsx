@@ -1,33 +1,9 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 
-// const fadeInVariants = {
-//     initial: {
-//         opacity: 0,
-//         y: 50,
-//     },
-//     animate: (index) => {
-//         return {
-//             opacity: 1,
-//             y: 0,
-//             transition: {
-//                 duration: 0.3,
-//                 delay: 0.1 * index,
-//             },
-//         };
-//     },
-// };
-
-// to use
-//  variants={fadeInVariants}
-//             initial="initial"
-//             animate="animate"
-//             whileInView="animate"
-//             custom={index}
-//             viewport={{ once: false }}
-
 const SingleSkillCard = ({ index, name, value, status }) => {
     const controls = useAnimation();
+
     useEffect(() => {
         const observer = new IntersectionObserver((items) => {
             items.forEach((item) => {

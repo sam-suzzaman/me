@@ -76,7 +76,7 @@ const LandingPage = () => {
                 </div>
             </Element>
             <Element name="skill">
-                <div className="section">
+                <div className="section section-not-full-h">
                     <div className="sec_container">
                         <Skill />
                     </div>

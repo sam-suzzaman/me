@@ -105,7 +105,7 @@ const Wrapper = styled.div`
     }
     .contact_form_container {
         border-radius: 5px;
-        background-color: #f5f5f5;
+        background-color: #f5f5f59d;
         padding: 30px 23px;
     }
 

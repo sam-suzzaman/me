@@ -6,8 +6,8 @@ import AllSkillList from "./Skill/AllSkillList";
 const Skill = () => {
     return (
         <div>
-            <SectionTitle title="explored topics" subtitle="skills" />
-            <Summery />
+            <SectionTitle title="Expertise & Tools" subtitle="skills" />
+            {/* <Summery /> */}
             <AllSkillList />
         </div>
     );
