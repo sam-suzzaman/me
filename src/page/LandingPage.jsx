@@ -69,7 +69,7 @@ const LandingPage = () => {
                 </div>
             </Element>
             <Element name="about">
-                <div className="section about_wrapper">
+                <div className="section  section-not-full-h about_wrapper">
                     <div className="sec_container">
                         <About />
                     </div>
