@@ -1,7 +1,7 @@
 {
     "profile_pic": "assets/profile.png",
     "username": "samsuzzaman",
-    "short_desc": "Frontend Web Developer, Specialize In Designing And Developing Intuitive And Visually Appealing User Interfaces And Experiences For Websites.",
+    "short_desc": "Junior Web Developer, Skilled in HTML, CSS, JavaScript, React.JS, Next.JS, Express.JS, MongoDB, Specialize In Developing UI and Functional Components For Websites.",
     "social_links": [
         {
             "id": 1,
@@ -28,7 +28,7 @@
     "location": "Kushtia,Dhaka, Bangladesh",
     "Educational_Institutation": "Jaitya Kabi Kazi Nazrul Islam University",
     "Degree_Name": "B.sc in Electrical and Electronic Engineering",
-    "Educational_Status": "Completed",
+    "Educational_Status": "Completed (Year:2024)",
     "Email": "00samsuzzaman@gmail.com",
     "contact": "01708642294"
 }
