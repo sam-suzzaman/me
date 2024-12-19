@@ -70,14 +70,14 @@ const Hero = () => {
                     transition={{ duration: 0.3, delay: 0.3 }}
                 >
                     <Button
-                        name="Hire Me"
-                        icon={<MdOutlineLocalPostOffice />}
-                        scrollTo="contact"
-                    />
-                    <Button
                         name="resume"
                         icon={<FaRegFilePdf />}
                         active={true}
+                    />
+                    <Button
+                        name="Hire Me"
+                        icon={<MdOutlineLocalPostOffice />}
+                        scrollTo="contact"
                     />
                 </motion.div>
                 <div className="social-btn-grp"></div>

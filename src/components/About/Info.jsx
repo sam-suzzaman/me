@@ -13,15 +13,15 @@ const Info = () => {
                             Hi <span>&#9995;</span>
                         </h5>
                         <p>
-                            I'm <span>Samsuzzaman</span>, a passionate and
-                            dedicated Frontend Web Developer who is ready to
-                            help you build brand for your business.
+                            I'm <span>Samsuzzaman</span>, a Junior Web Developer
+                            who is ready to contribute for your business. I
+                            specialize in building dynamic,seamless
+                            functionality and responsive web applications.
                         </p>
                         <p>
-                            Proficient in HTML, CSS, JavaScript, React.js,
-                            Node.js, Express.js, MongoDB, and Mongoose
-                            ecosystem, I specialize in building dynamic,seamless
-                            functionality and responsive web applications.
+                            Highly skilled in HTML, CSS, JavaScript,TailwindCSS,
+                            React.js, Next.js,Redux, Node.js, Express.js,
+                            MongoDB, and Mongoose ecosystem.
                         </p>
                         <p>
                             Constantly seeking new opportunities for learning
@@ -63,15 +63,18 @@ const Info = () => {
                             <span className="">00samsuzzaman@gmail.com</span>
                         </div>
                         <div className="single_row">
-                            <h6>Status:</h6>
-                            <span className="">Available</span>
+                            <h6>Passing Year:</h6>
+                            <span className="">2024</span>
                         </div>
                         {/* <div className="single_row">
                             <h6>contact:</h6>
                             <span className="">+880-01708642294</span>
                         </div> */}
                         <div className="hero_btn_grp">
-                            <Button name="resume" icon={<FaRegFilePdf />} />
+                            <Button
+                                name="download resume"
+                                icon={<FaRegFilePdf />}
+                            />
                         </div>
                     </div>
                 </div>
