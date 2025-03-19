@@ -34,20 +34,6 @@ const ContactInfo = () => {
                             <span className="">Bangladesh</span>
                         </p>
                     </div>
-                    {/* Mobile row */}
-                    <div className="mobile row">
-                        <img src={sixteenth} alt="mobile_icon" className="" />
-                        <p className="">
-                            <span className="">+880-01708642294</span>
-                        </p>
-                    </div>
-                    {/* Whatsapp row */}
-                    <div className="whatsapp row">
-                        <img src={fourteenth} alt="Whatsapp" className="" />
-                        <p className="">
-                            <span className="">01708642294</span>
-                        </p>
-                    </div>
                     {/* Email row */}
                     <div className="email row">
                         <img src={thirteentn} alt="Whatsapp" className="" />
