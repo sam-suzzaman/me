@@ -24,7 +24,13 @@ const ContactInfo = () => {
                     {/* location row */}
                     <div className="location row">
                         <img src={nine} alt="location_icon" className="" />
-                        <p className="">
+                         <p className="">
+                            <span className="">
+                               Kushtia, Bangladesh
+                            </span>
+                            
+                        </p>
+                       {/*  <p className="">
                             <span className="">
                                 Jatiya Kabi Kazi Nazrul Islam University
                             </span>
@@ -33,6 +39,7 @@ const ContactInfo = () => {
                             <br />
                             <span className="">Bangladesh</span>
                         </p>
+                        */}
                     </div>
                     {/* Email row */}
                     <div className="email row">
